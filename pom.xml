@@ -17,6 +17,12 @@
 
   <dependencies>
 
+    <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-stream</artifactId>
+      <version>4.0.6</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/junit/junit -->
     <dependency>
       <groupId>junit</groupId>
@@ -118,9 +124,11 @@
         <configuration>
           <consoleOutput>true</consoleOutput>
           <failsOnError>false</failsOnError>
+            <configLocation>/home/knoldus/IdeaProjects/assignment-java-02/checkstyle-checker.xml</configLocation>
           <linkXRef>false</linkXRef>
           <failOnViolation>false</failOnViolation>
-          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+            <configLocation>/home/knoldus/IdeaProjects/assignment-java-02/checkstyle.xml</configLocation>
+          <includeTestSourceDirectory>false</includeTestSourceDirectory>
           <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
           <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
           <outputFile>${project.basedir}/target/checkstyle-output.xml</outputFile>
